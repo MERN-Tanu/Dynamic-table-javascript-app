@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dynamic Table</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="data-table">
+        <table>
+          <thead class="table-head">
+            <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Country</th>
+              <th>Email</th>
+              <th>DOB</th>
+              <th>Age</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <div class="form-data">
+        <h2>Form to add data in a new row</h2>
+        <form action="#" method="POST" class="form">
+          <div class="name">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="gender">
+            <label for="gender">Gender:</label>
+
+            <input type="radio" name="gender" value="male" required />
+            <div>Male</div>
+
+            <input type="radio" name="gender" value="female" />
+            <div>Female</div>
+          </div>
+          <div class="country">
+            <label for="country">Country: </label>
+            <select name="country" id="country">
+              <option value="india">India</option>
+              <option value="usa">USA</option>
+              <option value="australia">Australia</option>
+            </select>
+          </div>
+          <div class="email">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="dob">
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob" required />
+          </div>
+          <div class="age">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required />
+          </div>
+          <input type="submit" value="Submit" id="submit-btn" />
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
